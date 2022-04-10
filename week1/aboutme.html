@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Me- Leonela Aguilar </title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style2.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+
+</head>
+<body>
+
+	<div class="header">
+		<h1 style="font-size:2vw">About Me- Leonela Aguilar </h1>
+		<i>DH 151 Spring 2022</i>
+		<p>Hi everyone! My name is Leonela (I go by Leo for short) and a fourth year at UCLA majoring in Sociology & minoring in Digitial Humanities. 
+			I was born and raised in Los Angeles. I'm 21 years old and currently live in Westwood with the best roomies ever! My 
+			favorite hobbies involve cooking vegan dishes, thrifting, and exploring skincare. Here are a few locations about me as well including the best coffee shop! I've been on my vegan journey for about a year & have fallen in love with matcha 
+			lattes ! 
+			
+			I am excited to begin this course and learn more about website building. I aspire to sharpen my technical skills 
+			and become a tech savy individual! After college, I hope to enter the tech industry as
+			a social science major. 
+		</p>
+	</div>
+	<div class="sidebar">
+		
+		<p><img src="https://lh3.googleusercontent.com/3AobNogWLWVvX9WWNMGAmXpZv_yK1MLfTGyH0ZXBQ4nLbZPSiF8V9tFZGOoGBvp2-DqQKM9JNqvgsu_Q3rfQ8o-6sdRDlmDYYp2c6r9X2dRjtmpupNXEwkVfY8LDLVNgPzC56yorYm3q2ZK6gU557ti0OzfprvQDoqmAa00GaYYesX1UwcRCutKAiffYn80iyw9Peb8IV_gAQrHeOlDNPduKXzmtCM8m6yjfH6qHapnXX4_ChuVkLqpB08ib7YFbv7xo2AaXQpgk4rfDfMZZez5P5TRMXYcoi1lOE7eDkXZg6mYD7CfsjTD61nDJzC9qhIhPE8spg49dasWsjt9EWsddDlAegvNB-5Qf1A94TdO2gWVSGApii7AmCEGZWq-WQYQpPg9ohnJI2w8p7cCBP310anQ6Sg4xZ67TL4T-0LciBFj9GtNkiZ0nIyAK0bU41g21GvnQ_q26BMK1NNj3tI7EtGxmsy16HhSoTiqYMOmvMTO2hLhZ4slaizRDecy4nJAeDwAHH_-Cy_8tUlPAtJAuRG7sVLjNyeLn5n_H4pBSQigOqt_KS_MIiUYMzHRj1MU8nAdxtWtEREXkSS5fdKSM6PHk2dGyvFNiLxbqv4QWkwesM6s9-62BGzpCZBK5cU_wO2tCX7tdNyJcfQHQ0Qq9W7wHEgZesRz8m0GHMyDDPFcrdyL38kf9m07cxlD-XnVw91xjug2QoXsneo21EbwgxR9DImHvOwcsTDL-psSftMoZ-PAKjsW0Oh4H=w1924-h1326-no?authuser=0"class="center">
+		
+			What I look forward to in this course: 
+			<ul>
+				<li>Coding ! </li>
+				<ul>
+					<li>Learning more about programming </li>
+					<li>Understanding new terms</li>
+					<li>Getting more comfortable with coding apps</li>
+				</ul>
+			</li>
+				<li>Website building !
+					<ul>
+						<li>Behind the scenes on adding texts and images on websites</li>
+						<li>Getting creative with HTML</li>
+					</ul>
+				</li>
+			
+
+
+
+	</div>
+	<div class="content">
+		<div id="map"></div> 
+	</div>
+
+	<script>
+
+var map = L.map('map').setView([34.0697,-118.4432], 17);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+var marker = L.marker([34.00327555467522, -118.43295057527477]).addTo(map)
+		.bindPopup('Coffee Connection<br> leos favorite matcha shop')
+		.openPopup();	
+
+var marker2 = L.marker([34.046316706581756, -118.44219004458583]).addTo(map)
+		.bindPopup('Home<br> leos apartment')
+		.openPopup();
+
+var marker3 = L.marker([34.055843022249626, -118.44218664458548]).addTo(map)
+		.bindPopup('Food<br> One of leos favorite places for vegan food')
+		.openPopup();
+
+
+	</script>
+
+
+
+</body>
+</html>
