@@ -10,7 +10,7 @@ body,html {
 
 body {
 	display: grid;
-	grid-template-rows: 80px 1fr;
+	grid-template-rows: 100px 1fr;
 	grid-template-columns: 250px 1fr;
 	grid-template-areas: 
 	"header header"
@@ -19,16 +19,17 @@ body {
 
 .header {
 	grid-area: header;
-	padding:10px;
-	background-color: #333;
-	color: white;
-	font-size: 2em;
+	padding: 10px;spx;
+	background-color: rgb(138, 170, 251);
+	color: rgb(250, 250, 250);
+	font-size: 70px;
 }
 
 .sidebar {
 	grid-area: sidebar;
 	padding:10px;
-	background-color: #555;
+	background-color: rgb(113, 155, 203);
+	}
 }
 
 .content {

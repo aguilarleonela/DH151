@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World</title>
+	<title>Favorite Locations</title>
 	<meta charset="utf-8" />
 
 	<!-- style sheets -->
@@ -14,28 +14,73 @@
 </head>
 <body>
 
-	<div class="header">
-		My World
+	<div class="header"> 
+		<center>Leonela's Trips</center>
+	
+		
 	</div>
 	<div class="sidebar">
-		My Sidebar
+		<p style="color:rgb(255, 255, 255);","font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Traveling to new cities is 
+			definitely one of my favorite hobbies. I have yet to travel to new countries but these are my 
+			top favorite locations outside of Los Angeles. In this cities I learned so much about culture, food, and weather. To learn more feel free to browse tourist recs !</p>
+
+			<ol> 
+				<pre>
+				<li style='color: rgb(255, 255, 255);'><span style='color:rgb(255, 255, 255);'><a href="https://www.nycgo.com/">New York City,NY </a></span></li>
+
+				<li style='color: rgb(255, 255, 255);'><span style='color:rgb(255, 255, 255);'><a href="https://www.vallarta-adventures.com/en/">Puerto Vallarta,MX</a></span></li>
+
+				<li style='color: rgb(255, 255, 255);'><span style='color:rgb(255, 255, 255);'><a href="https://www.solvangusa.com/">Solvang,CA</a></span></li>
+
+				<li style='color: rgb(255, 255, 255);'><span style='color:rgb(255, 255, 255);'><a href="https://www.visithoustontexas.com/">Houston,TX</a></span></li>
+
+				<li style='color: rgb(255, 255, 255);'><span style='color:rgb(255, 255, 255);'><a href="https://www.sftravel.com/">San Franscisco,CA</a></span></li>
+
+			</pre>
+		
+			  </ol> 
 	</div>
 	<div class="content">
 		<div id="map"></div>
 	</div>
 
 	<script>
-		var map = L.map('map').setView([34.0697,-118.4432], 17);
 
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-		}).addTo(map);
+var map = L.map('map').setView([37.0902,95.7129], 15);
 
-		var marker = L.marker([34.0697,-118.4432]).addTo(map)
-				.bindPopup('The Technology Sandbox<br> Where Yoh is sitting this very moment')
-				.openPopup();	
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+var marker = L.marker([40.744822890427194, -73.9964849011891]).addTo(map)
+		.bindPopup('<b>New York City</b> <br> New York has a range of food places, concerts, and local museums. During my stay in the summer, I enjoyed the Empire State Building view and the MET.')
+		.openPopup();	
+
+var marker2 = L.marker([20.657563444227698, -105.22624345184735]).addTo(map)
+		.bindPopup('<b>Puerto Vallarta</b> <br> Here I visited family and had an amazing time in the beautiful beaches. Many folks visit this area for great seafood and music.')
+		.openPopup();
+
+var marker3 = L.marker([34.601073360992935, -120.13947659319378]).addTo(map)
+		.bindPopup('<b> Solvang, CA</b> <br> Solvang is a city in Southern California in Santa Ynez Valley. It is known for its Danish-style architecture and many wineries.')
+		.openPopup();
+
+var marker4 = L.marker([29.781131198894613, -95.4205587598064]).addTo(map)
+		.bindPopup(' <b> Houston, TX</b> <br> This city is known as the fourth-largest city in the USA. This city is filled with world-class dining, arts, hotels, shopping and nightlife')
+		.openPopup();
+
+var marker5 = L.marker([37.78022593387135, -122.43086938635118]).addTo(map)
+		.bindPopup(' <b> San Francisco, CA</b> <br> Known as one of the most expensive cities in America, SF has a special place in my heart. Here I tried the best pho soup and boba.')
+		.openPopup();
+
+
+		
+		
+
+		alert("Hi everyone, welcome to my page regarding my fav places !");
+
 
 	</script>
+
 
 
 </body>
